@@ -58,6 +58,7 @@ for file in data/*-database.txt; do
 	mkdir -p "${version}/properties"
 	echo "Parsing Unicode v${version} categories..."
 	python scripts/category-code-points.py "data/${version}-database.txt" "${version}" &
+	python scripts/category-json.py "data/${version}-database.txt" "${version}" &
 	python scripts/category-symbols.py "data/${version}-database.txt" "${version}" &
 	python scripts/category-regex.py "data/${version}-database.txt" "${version}" &
 	wait
@@ -77,6 +78,7 @@ for file in data/*-properties.txt; do
 	#mkdir -p "${version}/properties"
 	echo "Parsing Unicode v${version} properties..."
 	python scripts/property-code-points.py "data/${version}-properties.txt" "${version}" &
+	python scripts/property-json.py "data/${version}-properties.txt" "${version}" &
 	python scripts/property-symbols.py "data/${version}-properties.txt" "${version}" &
 	python scripts/property-regex.py "data/${version}-properties.txt" "${version}" &
 	wait
@@ -89,6 +91,7 @@ for file in data/*-scripts.txt; do
 	mkdir -p "${version}/scripts"
 	echo "Parsing Unicode v${version} scripts..."
 	python scripts/script-code-points.py "data/${version}-scripts.txt" "${version}" &
+	python scripts/script-json.py "data/${version}-scripts.txt" "${version}" &
 	python scripts/script-symbols.py "data/${version}-scripts.txt" "${version}" &
 	python scripts/script-regex.py "data/${version}-scripts.txt" "${version}" &
 	wait
@@ -101,6 +104,7 @@ for file in data/*-blocks.txt; do
 	mkdir -p "${version}/blocks"
 	echo "Parsing Unicode v${version} blocks..."
 	python scripts/block-code-points.py "data/${version}-blocks.txt" "${version}" &
+	python scripts/block-json.py "data/${version}-blocks.txt" "${version}" &
 	python scripts/block-symbols.py "data/${version}-blocks.txt" "${version}" &
 	python scripts/block-regex.py "data/${version}-blocks.txt" "${version}" &
 	wait
