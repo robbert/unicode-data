@@ -1,0 +1,4 @@
+AddCharset UTF-8 .js .json
+AddType application/json .json
+AddType application/javascript .js
+AddOutputFilterByType DEFLATE application/javascript application/json
