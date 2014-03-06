@@ -1,0 +1,20 @@
+{
+	"name": "unicode-data-js",
+	"version": "6.3.0",
+	"description": "Unicode databases defined in JavaScript and JSON",
+	"homepage": "https://github.com/mathiasbynens/unicode-data",
+	"keywords": [
+		"unicode"
+	],
+	"author": {
+		"name": "Mathias Bynens",
+		"url": "http://mathiasbynens.be/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mathiasbynens/unicode-data.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mathiasbynens/unicode-data/issues"
+	}
+}
